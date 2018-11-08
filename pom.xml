@@ -69,14 +69,14 @@
         <tag>dropwizard-jobs-3.0.0</tag>
     </scm>
 
-    <distributionManagement>
+	<distributionManagement>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>bbc-release</id>
+            <url>${bbc.release.url}</url>
         </repository>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>bbc-snapshot</id>
+            <url>${bbc.snapshot.url}</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -168,6 +168,13 @@
 
             </plugins>
         </pluginManagement>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh-external</artifactId>
+                <version>1.0-beta-6</version>
+            </extension>
+        </extensions>
     </build>
 
     <profiles>
