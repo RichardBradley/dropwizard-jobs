@@ -71,7 +71,8 @@
 
 	<distributionManagement>
         <repository>
-            <id>releases-repo</id>
+            <id>bbc-release</id>
+            <url>${bbc.release.url}</url>
         </repository>
         <snapshotRepository>
             <id>bbc-snapshot</id>
