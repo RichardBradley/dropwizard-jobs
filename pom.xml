@@ -71,8 +71,7 @@
 
 	<distributionManagement>
         <repository>
-            <id>ext-releases-local</id>
-            <url>https://dev.bbc.co.uk/artifactory/ext-releases-local/</url>
+            <id>releases-repo</id>
         </repository>
         <snapshotRepository>
             <id>bbc-snapshot</id>
